@@ -142,10 +142,7 @@ function Home() {
         )}
       </section>
 
-      <section id="about" className="mt-12 text-sm text-muted">
-        <h3 className="font-semibold">About this showcase</h3>
-        <p className="mt-2">This small platform is built to host short walkthrough videos, images and links so you can share a single link on LinkedIn and other social platforms.</p>
-      </section>
+     
     </div>
   );
 }
