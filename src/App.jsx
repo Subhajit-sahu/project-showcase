@@ -34,19 +34,6 @@ import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate } 
 
 // ---------------------- Sample project data ----------------------
 const PROJECTS = [
-  // {
-  //   id: 'golds-gym',
-  //   title: "Golds Gym",
-  //   tagline: "Fitness learning platform with RapidAPI video integration",
-  //   videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // example YouTube embed
-  //   description: 'A platform to teach exercises with demo videos, exercise details, and downloadable resources.',
-  //   techStack: ['React', 'Node.js', 'Tailwind', 'Material UI', 'RapidAPI'],
-  //   features: ['Exercise library', 'YouTube integration', 'Responsive UI', 'Search & Filters'],
-  //   githubLink: 'https://github.com/yourusername/golds-gym',
-  //   liveLink: 'https://golds-gym.example.com',
-  //   images: ['/assets/gold1.jpg','/assets/gold2.jpg','https://res.cloudinary.com/dvnuqwyhs/image/upload/v1757327276/wanderlust_DEV/wthqpquarfkypvdvbdkl.jpg'],
-  //   learnings: 'Integrated third-party APIs, async data fetching, responsive layout, and video embedding techniques.'
-  // },
   {
   id: 'storeit',
   title: "StoreIt",
@@ -78,7 +65,34 @@ const PROJECTS = [
   ],
   learnings:
     'Learned to integrate Appwrite backend for file management, implement OTP-based authentication, design efficient UI workflows, and optimize deployment with Vercel for a seamless full-stack experience.'
-}
+},
+{
+    id: 'goldgym',
+    title: "Golds Gym",
+    tagline: "A modern fitness web app for exploring exercises and workout tutorials",
+    videoUrl: '/assets/goldgym/gold-gym.mp4', // optional demo walkthrough video
+    description:
+      'Golds Gym is a fitness-oriented React web app that helps users discover, learn, and perform various exercises with detailed instructions and integrated YouTube workout videos. It’s built to inspire fitness lovers to train smarter and learn proper techniques online.',
+    techStack: ['React', 'Node.js', 'Material UI', 'Tailwind CSS', 'Exercise DB API', 'YouTube API (RapidAPI)'],
+    features: [
+      'Search and filter exercises by body part, equipment, or target muscle',
+      'Detailed exercise pages with animated GIFs, instructions, and related exercises',
+      'Integrated YouTube videos for each workout for visual learning',
+      'Responsive UI with Material UI and Tailwind CSS styling',
+      'Backend proxy server to handle CORS and optimize API requests'
+    ],
+    githubLink: 'https://github.com/Subhajit-sahu/gold-gym', // replace with your actual repo link
+    liveLink: 'https://sweatculture.netlify.app/', // replace with your live link
+    images: [
+      '/assets/goldgym/img1.png',
+      '/assets/goldgym/img2.png',
+      '/assets/goldgym/img3.png',
+      '/assets/goldgym/img4.png',
+      '/assets/goldgym/img5.png',
+    ],
+    learnings:
+      'Gained hands-on experience with API integration, handling CORS issues using Node.js, and improving UI responsiveness with Material UI and Tailwind. Also learned efficient search/filter implementation in React.'
+  }
 
 ];
 
@@ -248,7 +262,7 @@ function ProjectPage() {
           </div>
 
           <div className="mt-4">
-            <h4 className="font-semibold mb-2">Screenshots</h4>
+            <h4 className="font-semibold mb-2">Images</h4>
             <Carousel images={project.images} />
           </div>
         </section>
@@ -312,7 +326,7 @@ export default function App() {
         </Routes>
 
         <footer className="mt-12 border-t py-6 text-center text-sm text-muted">
-          Built with ❤️ by Subhajit — Share the project link on LinkedIn.
+          Built by Subhajit — Share the project link on LinkedIn.
         </footer>
       </div>
     </Router>
