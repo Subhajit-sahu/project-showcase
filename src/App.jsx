@@ -35,6 +35,38 @@ import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate } 
 // ---------------------- Sample project data ----------------------
 const PROJECTS = [
   {
+  id: 'resumind',
+  title: "Resumind",
+  tagline: "Your intelligent AI-powered resume coach — built to boost your job match score",
+  videoUrl: '/assets/resumind/vid1.mp4', // demo walkthrough video
+  description:
+    'Resumind is an AI-driven resume analyzer that evaluates resumes against specific job descriptions to measure ATS (Applicant Tracking System) compatibility. It helps job seekers tailor their resumes to match a company’s requirements by providing personalized feedback, keyword optimization insights, and actionable improvement tips — all in one place.',
+  techStack: ['React', 'Tailwind CSS', 'OpenAI API', 'Vite'],
+  features: [
+    'Upload resume in PDF format for instant analysis',
+    'Enter company name, job role, and job description to generate context-specific feedback',
+    'AI-powered ATS score prediction and compatibility rating',
+    'Personalized improvement tips for better keyword alignment and formatting',
+    'Detailed section-wise evaluation — skills, experience, summary, and keywords',
+    'Smart suggestions for improving clarity, tone, and relevance',
+    'Minimal and intuitive UI for seamless user experience',
+    'Real-time analysis powered by natural language understanding'
+  ],
+  githubLink: 'https://github.com/Subhajit-sahu/Ai-Resume-Analyzer.git', // replace with your actual repo link
+  liveLink: 'https://smartresumecheck.netlify.app/', // replace with your deployed live app link
+  images: [
+    '/assets/resumind/img1.png',
+    '/assets/resumind/img2.png',
+    '/assets/resumind/img3.png',
+    '/assets/resumind/img4.png',
+    '/assets/resumind/img5.png',
+    '/assets/resumind/img6.png'
+  ],
+  learnings:
+    'Learned to build AI-integrated applications using OpenAI APIs, implement resume parsing and PDF extraction, structure effective prompt engineering for feedback generation, and design a clean, responsive frontend optimized for user experience and clarity.'
+}
+,
+  {
   id: 'storeit',
   title: "StoreIt",
   tagline: "A stylish cloud storage web app — your own personal drive",
